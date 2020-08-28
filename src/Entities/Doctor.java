@@ -1,17 +1,10 @@
 package Entities;
 
-public class Doctor {
-    String name;
-    int id;
-    String address;
-    int contactNumber;
+public class Doctor extends Person {
     String specialty;
 
-    public Doctor(String name, int id, String address, int contactNumber, String specialty) {
-        this.name = name;
-        this.id = id;
-        this.address = address;
-        this.contactNumber = contactNumber;
+    public Doctor(String name,int age, int id, String address, int contactNumber, String specialty) {
+        super(name, age, id, contactNumber, address);
         this.specialty = specialty;
     }
 }
